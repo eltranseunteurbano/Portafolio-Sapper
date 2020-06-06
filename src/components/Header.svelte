@@ -231,9 +231,9 @@
             <div class="nav__icon" on:click="{ () => toggleMenu(true) }"> <p>Menú</p> <Bars colorBars={ 'white' } /></div>
 
             <div class="nav__items" class:showMenuItems="{showMenu === true}">
-                <a href="/aboutme"> SOBRE MÍ </a>
-                <a href="/portfolio"> PORTAFOLIO </a>
-                <a href="/contact"> CONTACTO </a>
+                <a rel="noopener" href="/aboutme"> SOBRE MÍ </a>
+                <a rel="noopener" href="/portfolio"> PORTAFOLIO </a>
+                <a rel="noopener" href="/contact"> CONTACTO </a>
             </div>
         </nav>
         <div class="header__blank"></div>
@@ -248,10 +248,10 @@
             </div>
 
             <div class="header__content__items">
-                <a in:fly="{{x: -200, duration: 800, delay:400}}" out:fade href="/" class="header__content__items__item"> INICIO </a>
-                <a in:fly="{{x: -200, duration: 800, delay:600}}" out:fade href="/aboutme" style="animation-delay:.2s" class="header__content__items__item"> SOBRE MÍ </a>
-                <a in:fly="{{x: -200, duration: 800, delay:800}}" out:fade href="/portfolio" style="animation-delay:.4s" class="header__content__items__item"> PORTAFOLIO </a>
-                <a in:fly="{{x: -200, duration: 800, delay:1000}}" out:fade href="/contact" style="animation-delay:.6s" class="header__content__items__item"> CONTACTO </a>
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:400}}" out:fade href="/" class="header__content__items__item"> INICIO </a>
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:600}}" out:fade href="/aboutme" style="animation-delay:.2s" class="header__content__items__item"> SOBRE MÍ </a>
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:800}}" out:fade href="/portfolio" style="animation-delay:.4s" class="header__content__items__item"> PORTAFOLIO </a>
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:1000}}" out:fade href="/contact" style="animation-delay:.6s" class="header__content__items__item"> CONTACTO </a>
             </div>
 
 
@@ -261,9 +261,9 @@
                         <Icono name = { item.name } url = { item.url } image = { item.image } />
                     {/each}
                 </div>
-                <a in:fly="{{x: -200, duration: 800, delay:800}}" out:fade target="_blank" href="https://goo.gl/maps/rRYB19Qf8SKHZFew7" class ="header__content__contact__city">CALI, COLOMBIA</a>                
-                <a in:fly="{{x: -200, duration: 800, delay:1000}}" out:fade target="_blank" href="https://api.whatsapp.com/send?phone=573162580525" class="header__content__contact__correo">+57 316 258 0525</a>
-                <a in:fly="{{x: -200, duration: 800, delay:1200}}" out:fade target="_blank" href="mailto:burbanojaime98@gmail.com?cc=otradir@correo.es&subject=www.jaimeburbano.com" class="header__content__contact__number">burbanojaime98@gmail.com</a>
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:800}}" out:fade target="_blank" href="https://goo.gl/maps/rRYB19Qf8SKHZFew7" class ="header__content__contact__city">CALI, COLOMBIA</a>                
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:1000}}" out:fade target="_blank" href="https://api.whatsapp.com/send?phone=573162580525" class="header__content__contact__correo">+57 316 258 0525</a>
+                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:1200}}" out:fade target="_blank" href="mailto:burbanojaime98@gmail.com?cc=otradir@correo.es&subject=www.jaimeburbano.com" class="header__content__contact__number">burbanojaime98@gmail.com</a>
             </div>
 
         </article>

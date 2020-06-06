@@ -60,7 +60,7 @@
 </style>
 
 <div class="Icono">
-    <a href = { url } target="_blank">
+    <a rel="noopener" href = { url } target="_blank">
         <img src = { image } alt = { name }>
     </a>
 
