@@ -1,48 +1,35 @@
 <script>
 
-    import { fly } from 'svelte/transition'
+    import { flip } from 'svelte/animate'
+    import { onDestroy } from 'svelte'
+
+    import Redes from '../assets/scritps/Redes'
 
     import Logo from './Logo'
     import Icono from './Icono'
     import Header from './Header'
 
-    let redes = [
-        {
-            name: 'Linkedin',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/linkedin.svg'
-        },{
-            name: 'Behance',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/behance.svg'
-        },{
-            name: 'Git Hub',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/github.svg'
-        },{
-            name: 'Filmmaking',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/filmmaking.svg'
-        },{
-            name: 'Dribbble',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/dribbble.svg'
-        },{
-            name: 'Instagram',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/instagram.svg'
-        },{
-            name: 'Whats App',
-            url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-            image: '/images/iconos/whatsapp.svg'
-        },
-    ]
+    $:description = 'React Frontend Developer';
+
+    const professions = [ 'React Frontend Developer', 'Diseñador de Interfaces', 'Svelte Frontend Developer', 'Jugador de Ultimate', 'Realizador Audiovisual']
+    let position = 0;
+
+    const interval = setInterval( function () {
+        description = professions[position]
+        position += 1;
+        if(position >= 4) { position = 0 }
+    }, 1500);
+
+    onDestroy( () => clearInterval(interval))
+
+
+    
 </script>
 
 <style>
     .Banner {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
 
         background-image: url('./images/degradedBackground.svg');
         background-repeat: no-repeat;
@@ -55,7 +42,6 @@
         align-items: center;
 
         padding: 20px;
-        padding-bottom: 20%;
         box-sizing: border-box;
     }
 
@@ -91,12 +77,16 @@
 
     .Redes {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     img {
         width: 100%;
+    }
+
+    .Mouse {
+        margin-bottom: 80px;
     }
 
     .Mouse__down {
@@ -120,6 +110,12 @@
         }
     }
 
+    @media only screen and (min-width: 768px) {
+.Banner {
+    height: 95vh;
+}
+    }
+
 </style>
 
 <section class="Banner">
@@ -129,13 +125,13 @@
         <div class="Banner__logo__image"> <img src="/images/logo.svg" alt="Logo Jaime Burbano"></div>
         <div class="Banner__logo__text">
             <h1> Jaime Burbano</h1>
-            <span>Front end Developer</span>
+            <span >{description}</span>
         </div>
     </div>
 
     <div class="Redes">
     
-        {#each redes as item}
+        {#each Redes as item}
             <Icono name = { item.name } url = { item.url } image = { item.image } />
         {/each}
 

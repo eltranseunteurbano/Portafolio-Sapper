@@ -82,6 +82,7 @@
         }
 
         @media only screen and (max-width: 768px) {
+
             header{
                 justify-content: space-between;
             }

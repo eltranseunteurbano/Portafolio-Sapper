@@ -16,6 +16,7 @@
 
         position: relative;
         cursor: pointer;
+
     }
 
     a{
@@ -32,6 +33,9 @@
         transition: all .4s;
 
         margin: 5px;
+
+        border: solid 1px var(--main-color)
+
     }
 
     a:hover {
