@@ -83,7 +83,7 @@
         letter-spacing: 1.2px;
     }
 
-    .Banner__logo__text h1 {
+    .Banner__logo__text span{
         font-family: var(--font-nunito);
         margin-bottom: 0;
     }
