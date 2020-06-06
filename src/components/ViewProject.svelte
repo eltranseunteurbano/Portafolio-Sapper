@@ -33,7 +33,7 @@
         transition: all .4s;
     }
 
-    h4 {
+    h3 {
         font-family: var(--font-open);
         color: var(--color-white);
         font-weight: bolder;
@@ -63,7 +63,7 @@
 <div class="project">
     
     <div>
-        <h4>NOMBRE</h4>
+        <h3>NOMBRE</h3>
         <p>Categoría</p>
     </div>
 
