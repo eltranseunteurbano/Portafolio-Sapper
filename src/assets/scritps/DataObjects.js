@@ -2,31 +2,31 @@ const Redes = [
     {
         name: 'Linkedin',
         url: 'https://www.linkedin.com/in/eltranseunteurbano/',
-        image: '/images/iconos/linkedin.svg'
+        image: '/images/iconos/linkedin'
     },{
         name: 'Behance',
         url: 'https://www.behance.net/eltranseunteurbano/',
-        image: '/images/iconos/behance.svg'
+        image: '/images/iconos/behance'
     },{
         name: 'Git Hub',
         url: 'https://www.github.com/eltranseunteurbano/',
-        image: '/images/iconos/github.svg'
+        image: '/images/iconos/github'
     },{
         name: 'Filmmaking',
         url: 'https://www.instagram.com/jaimeburbano/',
-        image: '/images/iconos/filmmaking.svg'
+        image: '/images/iconos/filmmaking'
     },{
         name: 'Dribbble',
         url: 'https://www.dribbble.com/eltranseunteurbano/',
-        image: '/images/iconos/dribbble.svg'
+        image: '/images/iconos/dribbble'
     },{
         name: 'Instagram',
         url: 'https://www.instagram.com/eltranseunteurbano/',
-        image: '/images/iconos/instagram.svg'
+        image: '/images/iconos/instagram'
     },{
         name: 'Whats App',
         url: 'https://api.whatsapp.com/send?573162580525',
-        image: '/images/iconos/whatsapp.svg'
+        image: '/images/iconos/whatsapp'
     },
 ]
 

@@ -3,12 +3,13 @@
     export let name
     export let url
     export let image
+    export let type = "normal";
 
 </script>
 
 <style>
 
-    .Icono {
+    .Icono, .Icono-footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -16,7 +17,6 @@
 
         position: relative;
         cursor: pointer;
-
     }
 
     a{
@@ -57,11 +57,20 @@
         opacity: .8;
     }
 
+    .Icono-footer span {
+        display: none;
+    }
+
+    .Icono-footer a {
+        background: var(--color-black);
+        border: none
+    }
+
 </style>
 
-<div class="Icono">
+<div class="{type === "footer" ? "Icono-footer" : "Icono" }">
     <a rel="noopener" href = { url } target="_blank">
-        <img src = { image } alt = { name }>
+        <img src = { type === "footer" ? image + "-Blanco.svg" : image + ".svg" } alt = { name }>
     </a>
 
      <span> { name } </span>
