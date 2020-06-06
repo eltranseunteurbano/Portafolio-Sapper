@@ -81,7 +81,11 @@
         text-transform: uppercase;
         margin-bottom: 0;
         letter-spacing: 1.2px;
-        
+    }
+
+    .Banner__logo__text h1 {
+        font-family: var(--font-nunito);
+        margin-bottom: 0;
     }
 
     .Redes {
