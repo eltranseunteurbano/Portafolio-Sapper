@@ -14,6 +14,10 @@
         align-items: center;
     }
 
+    .Logo{
+        opacity: 0;
+    }
+
     .nav__items {
         display: flex;
         justify-content: center;
@@ -24,6 +28,8 @@
         color: var(--color-white);
         font-family: var(--font-nunito);
         margin-right: 5px;
+        font-size: 18px;
+        padding-top: 2px
     }
 
 </style>

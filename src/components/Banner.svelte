@@ -67,7 +67,8 @@
     }
 
     .Banner__logo__image {
-        width: 50%;
+        width: 60%;
+        margin-bottom: 50px;
     }
 
     .Banner__logo__text {
@@ -79,8 +80,8 @@
         font-weight: 600;
         font-family: var(--font-open);
         text-transform: uppercase;
-        margin-bottom: 0;
-        letter-spacing: 1.2px;
+        margin-bottom: 20px;
+        font-size: 25px;
     }
 
     .Banner__logo__text span{
