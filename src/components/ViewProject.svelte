@@ -33,7 +33,7 @@
         transition: all .4s;
     }
 
-    h3 {
+    .project__title {
         font-family: var(--font-open);
         color: var(--color-white);
         font-weight: bolder;
@@ -41,7 +41,7 @@
         margin-bottom: 10px;
     }
 
-    p {
+    span {
         font-family: var(--font-nunito);
         color: var(--color-white);
         font-weight: regular;
@@ -63,8 +63,8 @@
 <div class="project">
     
     <div>
-        <h3>NOMBRE</h3>
-        <p>Categoría</p>
+        <p class="project__title">NOMBRE</p>
+        <span>Categoría</span>
     </div>
 
 </div>
