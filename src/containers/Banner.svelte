@@ -29,7 +29,7 @@
 <style>
     .Banner {
         width: 100vw;
-        height: 90vh;
+        height: 100vh;
 
         background-image: url('./images/degradedBackground.svg');
         background-repeat: no-repeat;

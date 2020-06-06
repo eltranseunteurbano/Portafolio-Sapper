@@ -1,8 +1,8 @@
 {
-  "name": "pugstagram",
-  "homepage": "https://eltranseunteurbano.github.io/Pugstagram/",
+  "name": "ElTranseunteUrbano",
+  "homepage": "https://eltranseunteurbano.github.io/Portafolio-Sapper/",
   "version": "1.0.0",
-  "description": "Proyecto del curso de svelte",
+  "description": "Portafolio Jaime Burbano",
   "main": "index.js",
   "scripts": {
     "dev": "sapper dev",
