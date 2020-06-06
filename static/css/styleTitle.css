@@ -14,4 +14,13 @@
     --font-nunito: 'Nunito', sans-serif;
     --font-open: 'Open Sans', sans-serif;
 
+ 
+}
+
+:global(.title) {
+    color: var(--main-color);
+    font-family: var(--font-open);
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: .4px;
 }
