@@ -1,5 +1,5 @@
 <script>
-    import Banner from '../components/Banner'
+    import Banner from '../containers/Banner'
 </script>
 
 <style>

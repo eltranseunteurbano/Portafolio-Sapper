@@ -5,9 +5,9 @@
 
     import Redes from '../assets/scritps/Redes'
 
-    import Logo from './Logo'
-    import Icono from './Icono'
-    import Header from './Header'
+    import Logo from '../components/Logo'
+    import Icono from '../components/Icono'
+    import Header from '../components/Header'
 
     $:description = 'React Frontend Developer';
 
@@ -43,6 +43,8 @@
 
         padding: 20px;
         box-sizing: border-box;
+        
+        margin-bottom: 150px;
     }
 
     .Banner__logo {

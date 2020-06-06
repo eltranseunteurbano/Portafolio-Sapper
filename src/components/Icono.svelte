@@ -53,7 +53,7 @@
 
     }
 
-    .Icono:hover span{
+    a:hover ~ span{
         opacity: .8;
     }
 
