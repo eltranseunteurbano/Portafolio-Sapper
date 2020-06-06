@@ -4,7 +4,7 @@
     import Logo from './Logo'
     import Bars from './Bars'
     import CloseHeader from './CloseHeader'
-    import Redes from '../assets/scritps/Redes'
+    import { Redes } from '../assets/scritps/DataObjects'
     import Icono from './Icono'
 
     $: showMenu = false;
@@ -48,6 +48,7 @@
             box-sizing:border-box;
 
             width: 100%;
+            max-width: 1920px;
         }
 
         nav{

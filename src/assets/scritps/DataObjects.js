@@ -1,4 +1,4 @@
-let redes = [
+const Redes = [
     {
         name: 'Linkedin',
         url: 'https://www.linkedin.com/in/eltranseunteurbano/',
@@ -30,4 +30,18 @@ let redes = [
     },
 ]
 
-export default redes
+const Profesion = [{
+    title: 'Prototipado',
+    text: "Puedo diseñar y prototipar rápidamente interfaces de usuario teniendo como requerimientos las necesides de los usuarios y del negocio usando herramientas como Figma, Invision y Marvel.",
+    img: '/images/iconos/Mobile.svg'
+},{
+    title: 'Desarrollo Web',
+    text: "Puedo convertir los diseños web en código con una alta fidelidad a través de HTML, CSS y Javascript, usando framworks como React Js y Svelte Js.",
+    img: '/images/iconos/Web.svg'
+},{
+    title: 'Filmmaking',
+    text: "La fotografía y el video es una de mis grandes pasiones. Puedo planear y ejecutar rodajes a través de roles como productor, arte y camára.",
+    img: '/images/iconos/Film.svg'
+}]
+
+export { Redes, Profesion }
