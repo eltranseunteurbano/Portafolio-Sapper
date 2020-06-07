@@ -15,7 +15,8 @@
         position: relative;
         cursor: pointer;
         transition: all .4s;
-        border: solid 4px var(--color-white);
+        border-radius: 4px;
+
 
     }
 
@@ -23,7 +24,6 @@
         width: 100%;
         height: 100%;
 
-        background-color: rgba(0, 0, 0, .5);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,11 +46,6 @@
         color: var(--color-white);
         font-weight: regular;
         font-size: 16px;
-    }
-
-    .project:hover {
-        border: solid 4px var(--second-color);
-        border-radius: 4px;
     }
 
     .project:hover div {

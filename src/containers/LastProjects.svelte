@@ -22,6 +22,10 @@
         margin-bottom: 60px;
     }
 
+    .wrapper:hover .wrapper__item:not(:hover) {
+        filter: grayscale(100%);
+    }
+
     @media only screen and ( min-width: 700px) and (max-width: 1390px) {
         .wrapper {
             grid-template: 1fr / repeat(2, 300px);
@@ -33,6 +37,8 @@
             grid-template: 1fr / repeat(4, 300px);
         }
     }
+
+
 </style>
 
 <section class="LastProject">
@@ -40,12 +46,12 @@
     <h1 class="title">Últimos Proyectos</h1>
 
     <article class="wrapper">
-        <ViewProject />
-        <ViewProject />
-        <ViewProject />
-        <ViewProject />
+    <div class="wrapper__item"> <ViewProject /> </div>
+    <div class="wrapper__item"> <ViewProject /> </div>
+    <div class="wrapper__item"> <ViewProject /> </div>
+    <div class="wrapper__item"> <ViewProject /> </div>
     </article>
 
-    <a class="button" href="/projects">VER TODOS LOS PROYECTOS</a>
+    <a class="button" href="/projects" rel="prefetch">VER TODOS LOS PROYECTOS</a>
 
 </section>

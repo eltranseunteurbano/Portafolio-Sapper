@@ -1,6 +1,6 @@
 <script>
 
-    import { Description } from '../assets/scritps/Text'
+    import { Description } from '../assets/scripts/Text'
 
 </script>
 
@@ -32,5 +32,5 @@
 <section class="Welcome">
     <h1 class="title">¡HOLA! SOY JAIME BURBANO</h1>
     <p>{Description}</p>
-    <a class="button" href="/PDF/CV - Jaime Burbano.pdf" download="Jaime Burbano - CV" target="_blank"> Descargar Hoja de Vida</a>
+    <a class="button" href="/PDF/CV - Jaime Burbano.pdf" download="Jaime Burbano - CV" target="_blank" rel="prefetch"> Descargar Hoja de Vida</a>
 </section>

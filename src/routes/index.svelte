@@ -88,5 +88,5 @@
     <Welcome />
     <WhatIDo />
     <LastProjects />
-    <Footer />
 </main>
+<Footer />

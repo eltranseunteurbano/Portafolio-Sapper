@@ -1,13 +1,15 @@
 <script>
     import {fly, slide, blur, fade } from 'svelte/transition';
+    import { goto } from '@sapper/app'
 
     import Logo from './Logo'
     import Bars from './Bars'
     import CloseHeader from './CloseHeader'
-    import { Redes } from '../assets/scritps/DataObjects'
+    import { Redes } from '../assets/scripts/DataObjects'
     import Icono from './Icono'
 
     $: showMenu = false;
+    export let origin = 'index'
 
     function toggleMenu ( event ) {
         showMenu = event;
@@ -39,7 +41,6 @@
 </script>
 
 <style>
-
         header{
             display: flex;
             flex-direction: row;
@@ -221,23 +222,31 @@
             display: flex;
             justify-content: center;
         }
+    .header-color {
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .header-color .nav__items a, .header-color .nav__icon p {
+        color: var(--main-color);
+    }
 
          
-    </style>
+</style>
 
-    <header>
-        <div class="Logo"> </div>
+<header class="{origin !== "index" ? "header-color" : ""}">
+        <div class="Logo"> {#if origin !== "index"}<Logo />{/if} </div>
         <nav>
-            <div class="nav__icon" on:click="{ () => toggleMenu(true) }"> <p>Menú</p> <Bars colorBars={ 'white' } /></div>
+            <div class="nav__icon" on:click="{ () => toggleMenu(true) }"> <p>Menú</p> <Bars colorBars={ origin === "index" ? "white" : "" } /></div>
 
             <div class="nav__items" class:showMenuItems="{showMenu === true}">
-                <a rel="noopener" href="/aboutme"> SOBRE MÍ </a>
-                <a rel="noopener" href="/portfolio"> PORTAFOLIO </a>
-                <a rel="noopener" href="/contact"> CONTACTO </a>
+                <a rel="prefetch" href="/aboutme"> SOBRE MÍ </a>
+                <a rel="prefetch" href="/portfolio"> PORTAFOLIO </a>
+                <a rel="prefetch" href="/contact"> CONTACTO </a>
             </div>
         </nav>
         <div class="header__blank"></div>
-    </header>
+</header>
 
 {#if showMenu}
     <header class="header" in:slide="{{ duration: 600 }}" out:slide="{{ duration:600, delay: 100}}">
@@ -248,10 +257,10 @@
             </div>
 
             <div class="header__content__items">
-                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:400}}" out:fade href="/" class="header__content__items__item"> INICIO </a>
-                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:600}}" out:fade href="/aboutme" style="animation-delay:.2s" class="header__content__items__item"> SOBRE MÍ </a>
-                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:800}}" out:fade href="/portfolio" style="animation-delay:.4s" class="header__content__items__item"> PORTAFOLIO </a>
-                <a rel="noopener" in:fly="{{x: -200, duration: 800, delay:1000}}" out:fade href="/contact" style="animation-delay:.6s" class="header__content__items__item"> CONTACTO </a>
+                <a rel="prefetch" in:fly="{{x: -200, duration: 800, delay:400}}" out:fade href="/" class="header__content__items__item"> INICIO </a>
+                <a rel="prefetch" in:fly="{{x: -200, duration: 800, delay:600}}" out:fade href="/aboutme" style="animation-delay:.2s" class="header__content__items__item"> SOBRE MÍ </a>
+                <a rel="prefetch" in:fly="{{x: -200, duration: 800, delay:800}}" out:fade href="/portfolio" style="animation-delay:.4s" class="header__content__items__item"> PORTAFOLIO </a>
+                <a rel="prefetch" in:fly="{{x: -200, duration: 800, delay:1000}}" out:fade href="/contact" style="animation-delay:.6s" class="header__content__items__item"> CONTACTO </a>
             </div>
 
 

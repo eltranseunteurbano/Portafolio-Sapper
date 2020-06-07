@@ -3,7 +3,7 @@
     import { flip } from 'svelte/animate'
     import { onDestroy } from 'svelte'
 
-    import { Redes } from '../assets/scritps/DataObjects'
+    import { Redes } from '../assets/scripts/DataObjects'
 
     import Logo from '../components/Logo'
     import Icono from '../components/Icono'

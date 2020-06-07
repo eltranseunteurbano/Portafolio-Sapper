@@ -1,5 +1,5 @@
 <script>
-    import { Profesion } from '../assets/scritps/DataObjects'
+    import { Profesion } from '../assets/scripts/DataObjects'
 </script>
 
 <style>
@@ -83,5 +83,5 @@
 
     </article>
 
-    <a class="button" href="/aboutme">A CERCA DE MÍ</a>
+    <a class="button" href="/aboutme" rel="prefetch">A CERCA DE MÍ</a>
 </section>

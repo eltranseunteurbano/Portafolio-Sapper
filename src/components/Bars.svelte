@@ -15,23 +15,23 @@
 .lineOne{
         d:path("M21 21 L21 9");
         transition: all .4s;
-        stroke: #e94368;
+        stroke: var(--main-color);
     }
 
     .lineTwo{
         d:path("M15 21 L15 9");
         transition: all .4s;
-        stroke: #e94368;
+        stroke: var(--main-color);
     }
 
     .lineThree{
         d:path("M9 9 L9 21");
         transition: all .4s;
-        stroke: #e94368;
+        stroke: var(--main-color);
     }
 
     .white{
-        stroke: white;
+        stroke: var(--color-white);
     }
         
 </style>

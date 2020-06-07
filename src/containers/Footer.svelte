@@ -1,5 +1,5 @@
 <script>
-    import { Redes } from '../assets/scritps/DataObjects'
+    import { Redes } from '../assets/scripts/DataObjects'
     import Icono from '../components/Icono'
 
 </script>
@@ -25,7 +25,7 @@
         font-size: 20px;
         letter-spacing: 1px;
         font-weight: bolder;
-        margin-bottom: 15px
+        margin-bottom: 15px;
     }
 
     p { 
