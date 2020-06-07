@@ -13,7 +13,6 @@
 
     function toggleMenu ( event ) {
         showMenu = event;
-        console.log(event)
     }
 
     function onElementHeightChange(elm, callback){
@@ -215,7 +214,7 @@
             width:20%;
             height: 100%;
             background-color: var(--main-color);
-            background-image: url("/image/fondoMenu.svg");
+            background-image: url("/images/fondoMenu.svg");
             background-size: cover;
 
             padding-top: 80px;
